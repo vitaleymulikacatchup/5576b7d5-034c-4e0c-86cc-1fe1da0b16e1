@@ -23,7 +23,7 @@ export default function Home() {
       cardStyle="solid-bordered"
       primaryButtonStyle="diagonal-gradient"
       secondaryButtonStyle="solid"
-      showBlurBottom="false"
+      showBlurBottom={false}
     >
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
@@ -172,7 +172,7 @@ export default function Home() {
               company: "TechStart Inc",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/7648239/pexels-photo-7648239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Sarah Johnson"
+              imageAlt: "Portrait of a confident businesswoman standing with arms crossed in modern office space."
             },
             {
               id: "2",
@@ -181,7 +181,7 @@ export default function Home() {
               company: "Digital Solutions",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/8382073/pexels-photo-8382073.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Michael Chen"
+              imageAlt: "Focused businessman in a suit engaged in a serious discussion indoors with dramatic lighting."
             },
             {
               id: "3",
@@ -190,7 +190,7 @@ export default function Home() {
               company: "InnovateLab",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/9301461/pexels-photo-9301461.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Emily Rodriguez"
+              imageAlt: "A cheerful young man in a white shirt smiling at his desk in a modern office environment."
             },
             {
               id: "4",
@@ -199,7 +199,7 @@ export default function Home() {
               company: "Growth Ventures",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/5990037/pexels-photo-5990037.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "David Kim"
+              imageAlt: "A multicultural team engaged in a meeting around a conference table with laptops."
             }
           ]}
         />
