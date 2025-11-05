@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -14,7 +14,7 @@ import { Calendar, Code, FolderOpen, Github, Globe, Lightbulb, Linkedin, Mail, M
 export default function Home() {
   return (
     <ThemeProvider
-      defaultButtonVariant="slide-background"
+      defaultButtonVariant="text-stagger"
       defaultTextAnimation="background-highlight"
       borderRadius="rounded"
       contentWidth="large"
@@ -23,7 +23,7 @@ export default function Home() {
       cardStyle="solid-bordered"
       primaryButtonStyle="diagonal-gradient"
       secondaryButtonStyle="solid"
-      showBlurBottom={false}
+      showBlurBottom="false"
     >
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
@@ -172,8 +172,7 @@ export default function Home() {
               company: "TechStart Inc",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/7648239/pexels-photo-7648239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Portrait of a confident businesswoman standing with arms crossed in modern office space.",
-              quote: "Idan delivered exceptional work on our web application. His attention to detail and technical expertise exceeded our expectations."
+              imageAlt: "Portrait of a confident businesswoman standing with arms crossed in modern office space."
             },
             {
               id: "2",
@@ -182,8 +181,7 @@ export default function Home() {
               company: "Digital Solutions",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/8382073/pexels-photo-8382073.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Focused businessman in a suit engaged in a serious discussion indoors with dramatic lighting.",
-              quote: "Working with Idan was a game-changer for our project. His full-stack skills and design sense created the perfect solution."
+              imageAlt: "Focused businessman in a suit engaged in a serious discussion indoors with dramatic lighting."
             },
             {
               id: "3",
@@ -192,8 +190,7 @@ export default function Home() {
               company: "InnovateLab",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/9301461/pexels-photo-9301461.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "A cheerful young man in a white shirt smiling at his desk in a modern office environment.",
-              quote: "Idan's ability to understand our vision and translate it into a beautiful, functional product was remarkable."
+              imageAlt: "A cheerful young man in a white shirt smiling at his desk in a modern office environment."
             },
             {
               id: "4",
@@ -202,8 +199,7 @@ export default function Home() {
               company: "Growth Ventures",
               rating: 5,
               imageSrc: "https://images.pexels.com/photos/5990037/pexels-photo-5990037.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "A multicultural team engaged in a meeting around a conference table with laptops.",
-              quote: "Professional, reliable, and incredibly talented. Idan delivered our mobile app ahead of schedule with outstanding quality."
+              imageAlt: "A multicultural team engaged in a meeting around a conference table with laptops."
             }
           ]}
         />
@@ -240,7 +236,7 @@ export default function Home() {
             rows: 5,
             required: true
           }}
-          onSubmit="console.log('Contact form submitted:', data)"
+          onSubmit={(data) => console.log('Contact form submitted:', data)}
         />
       </div>
 
